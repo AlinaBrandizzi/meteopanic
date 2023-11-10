@@ -25,10 +25,9 @@ class WeatherInfo {
     return WeatherInfo(
       time: DateTime.parse(json['time']),
       temperature: json['temperature_2m'],
-      windSpeed: json[
-          'wind_speed_10m'], // Make sure to update if the API provides this.
+      windSpeed: json['wind_speed_10m'],
       humidity: json['relative_humidity_2m'],
-      isDay: json['is_day'] == 1, // Assuming 'is_day' is provided as 1 or 0.
+      isDay: json['is_day'] == 1,
       rain: json['rain'],
       snowfall: json['snowfall'],
       weatherCode: json['weather_code'],
